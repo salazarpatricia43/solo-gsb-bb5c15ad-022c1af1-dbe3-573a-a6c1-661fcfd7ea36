@@ -1,0 +1,7 @@
+services:
+  carpool-splitter:
+    build: .
+    image: carpool-splitter:latest
+    ports:
+      - "${PORT:-8000}:8000"
+    restart: unless-stopped
